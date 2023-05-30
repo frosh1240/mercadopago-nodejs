@@ -1,5 +1,5 @@
 import mercadopago from "mercadopago"
-import { MERCADOPAGO_API } from "../config"
+import { MERCADOPAGO_API, HOST } from "../config"
 
 
 export const createOrder = async (req,res) => {
