@@ -1,9 +1,11 @@
 import mercadopago from "mercadopago"
+import { MERCADOPAGO_API } from "../config"
+
 
 export const createOrder = async (req,res) => {
 
     mercadopago.configure({
-        access_token: "TEST-1216628037766258-053013-b78173446a59335adf1763d8fccdaf80-1386208505"
+        access_token: MERCADOPAGO_API
     })
 
     try{
